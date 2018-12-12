@@ -183,10 +183,58 @@ h1,h2,h3{
     background-color: white;
 }
 
+/* About Us */
+
+.about-us{
+    padding: 2em 1em 1em 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-us h2{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.about-us p{
+
+}
+
+/* Latest Work */
+
+.latest-work{
+    overflow: auto;
+}
+
+.galleryblock{
+    display: block;
+    position: relative;
+    float: left;
+    width: 40%;
+    margin: .1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.galleryblock:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.img-bg{
+    display: block;
+    position: relative;
+    z-index: -10;
+    width: 100%;
+}
 
 
-
-
+.galleryblock-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 
 
