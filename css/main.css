@@ -118,7 +118,7 @@ h1,h2,h3{
 .header-title{
     text-transform: uppercase;
     float: left;
-
+    position: fixed;
 }
 
 .header-title a{
@@ -134,7 +134,7 @@ h1,h2,h3{
     background-color: black;
     color: white;
     padding: 1em 1em 0 1em;
-    z-index: -9;
+    z-index: -10;
 }
 
 .menu{
@@ -143,42 +143,40 @@ h1,h2,h3{
 }
 
 .hero{
-    line-height: 1em;
-    text-align: center;
+    display: block;
     position: relative;
-    object-fit:cover;
-    z-index: -10;
+    width: 100%;
+    margin: 0;
+    margin-top: 3em;
+    padding: 0;
 }
 
-.hero h1{
-    font-size: 2.75em;
-    position: absolute;
-    padding: 0 20% 1em 20%;
-    border-bottom: 1px solid white;
-    font-weight: bold;
-    color: white;
-    margin: 0 auto;
-    transform: translate(-50%, -50%);
-    text-align: center;
 
-}
-
-.hero img{
+.hero-bg{
+    display: block;
+    position: relative;
     width: 100%;
     max-height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: -20;
 }
 
-.button{
-    display: inline-block;
-    border: 2px solid white;
-    padding: .5em 1em;
-    font-size: 1.25em;
-    color: white;
+.hero-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: translate(-50%, -50%;)
     text-align: center;
-    font-weight: normal;
+    color: white;
 }
 
-.button:hover{
+.hero-overlay .button{
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.hero-overlay .button:hover{
     color: #000;
     background-color: white;
 }
